@@ -1,13 +1,13 @@
 import './App.css';
+import logo from './selogo2.png';  
 /*  import logo from './logo.svg';   */
-/*  import logo from './selogo2.png';    */
 /*  import './App.css';   */
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-{/*          <img src={logo} className="App-logo" alt="logo" />    */}
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           <img src="./selogo.png" alt=""/>
         </p>
@@ -17,7 +17,7 @@ const App = () => {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://charleshodge.com"
           target="_blank"
           rel="noopener noreferrer"
         >

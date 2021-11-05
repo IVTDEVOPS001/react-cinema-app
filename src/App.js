@@ -7,7 +7,8 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          The path is clear, and the time is now.
+{/*          Edit <code>src/App.js</code> and save to reload.   */}
         </p>
         <a
           className="App-link"
@@ -15,7 +16,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn to Boogie Down with The Hodge!!!
         </a>
       </header>
     </div>

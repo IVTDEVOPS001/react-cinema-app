@@ -89,12 +89,12 @@ jobs:
             aws configure set preview.cloudfront
             if [ "${CURRENT_BRANCH}" == "master" ]
             then
-              aws cloudfront create-invalidation --distribution-id ${PRODUCTION_DISTRIBUTION_ID} --paths /\*
+              aws cloudfront create-invalidation --distribution-id E2KZKSYRQJ1COL --paths /\*
             elif [ "${CURRENT_BRANCH}" == "staging" ]
             then
-              aws cloudfront create-invalidation --distribution-id ${STAGING_DISTRIBUTION_ID} --paths /\*
+              aws cloudfront create-invalidation --distribution-id E1S9N9J2IO7RY2 --paths /\*
             else
-              aws cloudfront create-invalidation --distribution-id ${DEV_DISTRIBUTION_ID} --paths /\*
+              aws cloudfront create-invalidation --distribution-id E19Q6N5B3F5CNX --paths /\*
             fi
 
 workflows:
@@ -121,5 +121,14 @@ workflows:
                 - master  
 
 
-
+#            aws configure set preview.cloudfront
+#           if [ "${CURRENT_BRANCH}" == "master" ]
+#            then
+#             aws cloudfront create-invalidation --distribution-id ${PRODUCTION_DISTRIBUTION_ID} --paths /\*
+#            elif [ "${CURRENT_BRANCH}" == "staging" ]
+#            then
+#              aws cloudfront create-invalidation --distribution-id ${STAGING_DISTRIBUTION_ID} --paths /\*
+#            else
+#              aws cloudfront create-invalidation --distribution-id ${DEV_DISTRIBUTION_ID} --paths /\*
+#            fi
 

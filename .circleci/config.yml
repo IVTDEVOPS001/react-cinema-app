@@ -34,14 +34,13 @@ jobs:
       - run:
           name: Installing AWS CLI
           working_directory: /
-          command:
-            # sudo apt-get -y -qq update
+          command: |
             sudo apt-get update
             sudo apt-get install -y awscli
             sudo apt-get install -y python-pip python-dev build-essential
       - run:
           name: Build poject
-          command: 
+          command: |
             npm install
             npm run build
             cd build
@@ -49,7 +48,7 @@ jobs:
             echo "Build successful"
       - run:
           name: Deploy to AWS S3
-          command: 
+          command: |
             if [ "${CURRENT_BRANCH}" == "master" ]
             then
               aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_BUCKET_PRODUCTION} --delete
@@ -73,13 +72,13 @@ jobs:
       - run:
           name: Installing AWS CLI
           working_directory: /
-          command:
+          command: |
             sudo apt-get -y -qq update
             sudo apt-get install -y awscli
             sudo apt-get install -y python-pip python-dev build-essential
       - run:
           name: Build poject
-          command: 
+          command: |
             npm install
             npm run build
             cd build
@@ -87,7 +86,7 @@ jobs:
             echo "Build successful"
       - run:
           name: Deploy to AWS Cloudfront
-          command: 
+          command: |
             aws configure set preview.cloudfornt
             if [ "${CURRENT_BRANCH}" == "master" ]
             then

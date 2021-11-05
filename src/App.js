@@ -1,5 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './selogo2.png';  
+/*  import logo from './logo.svg';   */
+/*  import './App.css';   */
 
 const App = () => {
   return (
@@ -7,15 +9,19 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <img src="./selogo.png" alt=""/>
+        </p>
+        <p>
+          The path is clear, and the time is now.<br/><br></br>
+{/*          Edit <code>src/App.js</code> and save to reload.   */}
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://charleshodge.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn to Boogie Down with The Hodge!!!
         </a>
       </header>
     </div>

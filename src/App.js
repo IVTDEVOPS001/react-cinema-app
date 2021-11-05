@@ -1,14 +1,14 @@
 import './App.css';
-{/*  import logo from './logo.svg';   */}
-{/*  import logo from './selogo2.png';    */}
-{/*  import './App.css';   */}
+/*  import logo from './logo.svg';   */
+/*  import logo from './selogo2.png';    */
+/*  import './App.css';   */
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-{/*  }        <img src={logo} className="App-logo" alt="logo" />    */}
-        <img src="./selogo.png" />
+{/*          <img src={logo} className="App-logo" alt="logo" />    */}
+        <img src="./selogo.png" alt=""/>
         <p>
           The path is clear, and the time is now.
 {/*          Edit <code>src/App.js</code> and save to reload.   */}

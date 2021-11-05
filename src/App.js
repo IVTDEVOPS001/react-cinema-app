@@ -8,7 +8,9 @@ const App = () => {
     <div className="App">
       <header className="App-header">
 {/*          <img src={logo} className="App-logo" alt="logo" />    */}
-        <img src="./selogo.png" alt=""/>
+        <p>
+          <img src="./selogo.png" alt=""/>
+        </p>
         <p>
           The path is clear, and the time is now.
 {/*          Edit <code>src/App.js</code> and save to reload.   */}

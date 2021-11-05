@@ -1,5 +1,5 @@
 {/*  import logo from './logo.svg';   */}
-import logo from './selogo2.png';
+{/*   import logo from './selogo2.png';    */}
 import './App.css';
 
 const App = () => {

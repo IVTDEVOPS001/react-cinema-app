@@ -12,7 +12,7 @@ const App = () => {
           <img src="./selogo.png" alt=""/>
         </p>
         <p>
-          The path is clear, and the time is now.
+          The path is clear, and the time is now.<br/><br></br>
 {/*          Edit <code>src/App.js</code> and save to reload.   */}
         </p>
         <a
